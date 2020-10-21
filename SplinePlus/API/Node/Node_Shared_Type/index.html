@@ -40,7 +40,7 @@
     
     
       
-        <title>[Node](../Index.md) =>Shared Type - Documentation</title>
+        <title>Node Shared Type - Documentation</title>
       
     
     
@@ -112,7 +112,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#node-shared-type" tabindex="1" class="md-skip">
+      <a href="#set" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -138,7 +138,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                [Node](../Index.md) =>Shared Type
+                Node Shared Type
               
             </span>
           
@@ -817,8 +817,22 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#set" class="md-nav__link">
+    Set
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
   
 </nav>
                   </div>
@@ -831,13 +845,15 @@
               
                 
                 
-                <h1 id="node-shared-type"><a href="../../Index/">Node</a> =&gt;Shared Type</h1>
+                  <h1>Node Shared Type</h1>
+                
+                <h3 id="set">Set</h3>
 <p>Change the shared node type,<br />
 <strong>Random:</strong> pick a branch randomly when follower is on the shared node<br />
 <strong>Defined:</strong> define a branch for the follower to take when it is on the shared node ,<br />
 ( Optional ) the left, right, forward, backward are branches keys to define , if no value is defined for these variables, then branch picking decision will become random.  </p>
 <p>If Animation type is set to "Auto" and type is set to Defined then the only branch options that will be taken into consideration are Forward and Backward branch keys,   </p>
-<div class="codehilite"><pre><span></span><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">Node_Shared_Type</span><span class="p">(</span><span class="n">Node</span> <span class="n">node</span><span class="p">,</span> <span class="n">SharedNodeType</span> <span class="n">sharedNodeType</span> <span class="o">=</span> <span class="n">SharedNodeType</span><span class="p">.</span><span class="na">Random</span>
+<div class="codehilite"><pre><span></span><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">Node_Set_Shared_Type</span><span class="p">(</span><span class="n">Node</span> <span class="n">node</span><span class="p">,</span> <span class="n">SharedNodeType</span> <span class="n">sharedNodeType</span> <span class="o">=</span> <span class="n">SharedNodeType</span><span class="p">.</span><span class="na">Random</span>
 <span class="p">,</span> <span class="kt">int</span> <span class="n">left</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
 <span class="p">,</span> <span class="kt">int</span> <span class="n">right</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
 <span class="p">,</span> <span class="kt">int</span> <span class="n">forward</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
@@ -850,6 +866,20 @@
 <span class="kd">var</span> <span class="n">node</span> <span class="o">=</span> <span class="n">SPData</span><span class="p">.</span><span class="na">BranchesDict</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">Nodes</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">;</span>
 <span class="c1">//Change node type to defined and set the forward and backward options, left and right are not taken into consideration if animation type is auto</span>
 <span class="n">SplinePlusAPI</span><span class="p">.</span><span class="na">Node_Shared_Type</span><span class="p">(</span><span class="n">SPData</span><span class="p">,</span> <span class="n">node</span><span class="p">,</span> <span class="n">SharedNodeType</span><span class="p">.</span><span class="na">Defined</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
+</pre></div>
+
+
+<p>### Get</p>
+<div class="codehilite"><pre><span></span><span class="kd">public</span> <span class="kd">static</span> <span class="n">SharedNodeType</span> <span class="nf">Node_Get_Shared_Type</span><span class="p">(</span><span class="n">Node</span> <span class="n">node</span><span class="p">)</span>
+</pre></div>
+
+
+<p><span style="color:#ABB2B9  ">  Example:   </span> </p>
+<div class="codehilite"><pre><span></span><span class="c1">// Get the first node of the branch with key 0</span>
+<span class="kd">var</span> <span class="n">node</span> <span class="o">=</span> <span class="n">SPData</span><span class="p">.</span><span class="na">BranchesDict</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">Nodes</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">;</span>
+<span class="c1">//get the shared node type</span>
+<span class="kd">var</span> <span class="n">sharedNodeType</span><span class="o">=</span><span class="n">SplinePlusAPI</span><span class="p">.</span><span class="na">Node_Get_Shared_Type</span><span class="p">(</span><span class="n">node</span><span class="p">);</span>
+<span class="n">Debug</span><span class="p">.</span><span class="na">Log</span><span class="p">(</span><span class="n">sharedNodeType</span><span class="p">);</span>
 </pre></div>
                 
                   

@@ -40,7 +40,7 @@
     
     
       
-        <title>[Node](../Index.md) =>Type - Documentation</title>
+        <title>Node Type - Documentation</title>
       
     
     
@@ -112,7 +112,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#node-type" tabindex="1" class="md-skip">
+      <a href="#set" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -138,7 +138,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                [Node](../Index.md) =>Type
+                Node Type
               
             </span>
           
@@ -817,8 +817,22 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#set" class="md-nav__link">
+    Set
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
   
 </nav>
                   </div>
@@ -831,10 +845,12 @@
               
                 
                 
-                <h1 id="node-type"><a href="../../Index/">Node</a> =&gt;Type</h1>
+                  <h1>Node Type</h1>
+                
+                <h3 id="set">Set</h3>
 <p>Change the node bezier curvature type, <br />
 newNodeType is an enum, options available are smooth, free, broken  </p>
-<div class="codehilite"><pre><span></span><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">Node_Type</span><span class="p">(</span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">,</span> <span class="n">Node</span> <span class="n">node</span><span class="p">,</span> <span class="n">NodeType</span> <span class="n">newNodeType</span><span class="p">)</span>
+<div class="codehilite"><pre><span></span><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">Node_Set_Type</span><span class="p">(</span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">,</span> <span class="n">Node</span> <span class="n">node</span><span class="p">,</span> <span class="n">NodeType</span> <span class="n">newNodeType</span><span class="p">,</span> <span class="n">bool</span> <span class="n">updateSpline</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span>
 </pre></div>
 
 
@@ -842,7 +858,22 @@ newNodeType is an enum, options available are smooth, free, broken  </p>
 <div class="codehilite"><pre><span></span><span class="c1">// Get the first node of the branch with key 0</span>
 <span class="kd">var</span> <span class="n">node</span> <span class="o">=</span> <span class="n">SPData</span><span class="p">.</span><span class="na">BranchesDict</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">Nodes</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">;</span>
 <span class="c1">//Change node type to Smooth</span>
-<span class="n">SplinePlusAPI</span><span class="p">.</span><span class="na">Node_Type</span><span class="p">(</span><span class="n">SPData</span><span class="p">,</span> <span class="n">node</span><span class="p">,</span> <span class="n">NodeType</span><span class="p">.</span><span class="na">Smooth</span><span class="p">);</span>
+<span class="n">SplinePlusAPI</span><span class="p">.</span><span class="na">Node_Set_Type</span><span class="p">(</span><span class="n">SPData</span><span class="p">,</span> <span class="n">node</span><span class="p">,</span> <span class="n">NodeType</span><span class="p">.</span><span class="na">Smooth</span><span class="p">);</span>
+</pre></div>
+
+
+<p>### Get</p>
+<div class="codehilite"><pre><span></span><span class="kd">public</span> <span class="kd">static</span> <span class="n">NodeType</span> <span class="nf">Node_Get_Type</span><span class="p">(</span> <span class="n">Node</span> <span class="n">node</span> <span class="p">)</span>
+</pre></div>
+
+
+<p><span style="color:#ABB2B9  ">  Example:   </span> </p>
+<div class="codehilite"><pre><span></span><span class="c1">// Get the first node of the branch with key 0</span>
+<span class="kd">var</span> <span class="n">node</span> <span class="o">=</span> <span class="n">SPData</span><span class="p">.</span><span class="na">BranchesDict</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">Nodes</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">;</span>
+<span class="c1">//Get node type </span>
+<span class="kd">var</span> <span class="n">nodeType</span><span class="o">=</span><span class="n">SplinePlusAPI</span><span class="p">.</span><span class="na">Node_Get_Type</span><span class="p">(</span> <span class="n">node</span><span class="p">);</span>
+
+<span class="n">Debug</span><span class="p">.</span><span class="na">Log</span><span class="p">(</span><span class="n">nodeType</span><span class="p">);</span>
 </pre></div>
                 
                   
