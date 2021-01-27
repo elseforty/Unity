@@ -40,7 +40,7 @@
     
     
       
-        <title>Path Finding - Documentation</title>
+        <title>Spline Plus - Documentation</title>
       
     
     
@@ -112,7 +112,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#features" tabindex="1" class="md-skip">
+      <a href="#spline-plus" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -138,7 +138,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Path Finding
+                Spline Plus
               
             </span>
           
@@ -300,12 +300,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-4" type="checkbox" id="nav-1-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-4" type="checkbox" id="nav-1-4">
     
     <label class="md-nav__link" for="nav-1-4">
       Modifiers
@@ -345,45 +343,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Path Finding
-      </label>
-    
-    <a href="./" title="Path Finding" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../PathFinding/Inspector/" title="Path Finding" class="md-nav__link">
       Path Finding
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
-    Features
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -444,10 +408,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-5" type="checkbox" id="nav-1-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-5" type="checkbox" id="nav-1-5" checked>
     
     <label class="md-nav__link" for="nav-1-5">
       API
@@ -463,11 +429,91 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../API/SplinePlus/" title="Spline Plus" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Spline Plus
+      </label>
+    
+    <a href="./" title="Spline Plus" class="md-nav__link md-nav__link--active">
       Spline Plus
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create" class="md-nav__link">
+    Create
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spdata" class="md-nav__link">
+    SPData
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branches" class="md-nav__link">
+    Branches
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nodes-list" class="md-nav__link">
+    Nodes list
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shared-nodes-list" class="md-nav__link">
+    Shared Nodes List
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smoothness" class="md-nav__link">
+    Smoothness
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-axis" class="md-nav__link">
+    Reference axis
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -477,7 +523,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../API/Node/" title="Node" class="md-nav__link">
+    <a href="../Node/" title="Node" class="md-nav__link">
       Node
     </a>
   </li>
@@ -489,7 +535,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../API/Branch/" title="Branch" class="md-nav__link">
+    <a href="../Branch/" title="Branch" class="md-nav__link">
       Branch
     </a>
   </li>
@@ -501,7 +547,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../API/Follower/" title="Follower" class="md-nav__link">
+    <a href="../Follower/" title="Follower" class="md-nav__link">
       Follower
     </a>
   </li>
@@ -513,7 +559,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../API/MeshDeform/" title="Mesh Deform" class="md-nav__link">
+    <a href="../MeshDeform/" title="Mesh Deform" class="md-nav__link">
       Mesh Deform
     </a>
   </li>
@@ -591,13 +637,57 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
-    Features
+  <a href="#create" class="md-nav__link">
+    Create
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spdata" class="md-nav__link">
+    SPData
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branches" class="md-nav__link">
+    Branches
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nodes-list" class="md-nav__link">
+    Nodes list
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shared-nodes-list" class="md-nav__link">
+    Shared Nodes List
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smoothness" class="md-nav__link">
+    Smoothness
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-axis" class="md-nav__link">
+    Reference axis
   </a>
   
 </li>
@@ -619,55 +709,55 @@
               
                 
                 
-                  <h1>Path Finding</h1>
-                
-                <p>Spline Path Finding is a path finding system for splines, it's  a combination of the branching spline system <a href="https://assetstore.unity.com/packages/tools/animation/spline-plus-115853">Spline Plus</a>   and  the path finding algorithm Dijkstra,</p>
-<h2 id="features">Features</h2>
-<ul>
-<li>Multiple agents.</li>
-<li>Advanced Events.</li>
-<li>Advanced spline modeling features to quickly build complex paths.</li>
-<li>Full source code included</li>
-<li>Example scenes included</li>
-</ul>
-<p><img src="../images/Inspector.png"
-alt="Markdown Monster icon"
-style="margin-center: 10px; width: 450px" />
-</br></p>
-<table>
-<thead>
-<tr>
-<th>Variables</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>On/Off switch</td>
-<td>Enable/disable goal animation.</td>
-</tr>
-<tr>
-<td>Game object slot</td>
-<td>Goal game object.</td>
-</tr>
-<tr>
-<td><b><a href="../GoalSettings/">Settings</a></b></td>
-<td>Open goal <a href="../GoalSettings/">Settings</a> window.</td>
-</tr>
-<tr>
-<td>On/Off switch</td>
-<td>Enable/disable agent animation.</td>
-</tr>
-<tr>
-<td>Game object slot</td>
-<td>Agent game object.</td>
-</tr>
-<tr>
-<td><b><a href="../AgentSettings/">Settings</a></b></td>
-<td>Open agent <a href="../AgentSettings/">Settings</a> window.</td>
-</tr>
-</tbody>
-</table>
+                <h1 id="spline-plus">Spline Plus</h1>
+<h4 id="create">Create</h4>
+<div class="codehilite"><pre><span></span> <span class="c1">//Create Spline Plus</span>
+ <span class="kd">public</span> <span class="kd">static</span> <span class="n">SPData</span> <span class="nf">SplinePlus_Create</span><span class="p">(</span><span class="n">Vector3</span> <span class="n">position</span><span class="p">)</span>
+</pre></div>
+
+
+<h4 id="spdata">SPData</h4>
+<div class="codehilite"><pre><span></span> <span class="c1">//Get your SPData object from your spline plus component</span>
+ <span class="n">sPData</span> <span class="o">=</span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SplinePlus</span><span class="o">&gt;</span><span class="p">().</span><span class="na">SPData</span><span class="p">;</span>
+
+ <span class="c1">//Get your SPData object directly when creating spline plus object through code</span>
+ <span class="n">sPData</span> <span class="o">=</span> <span class="n">SplinePlusAPI</span><span class="p">.</span><span class="na">SplinePlus_Create</span><span class="p">(</span><span class="k">new</span> <span class="n">Vector3</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">));</span>
+</pre></div>
+
+
+<h4 id="branches">Branches</h4>
+<div class="codehilite"><pre><span></span> <span class="kd">public</span> <span class="kd">static</span> <span class="n">Dictionary</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="n">Branch</span><span class="o">&gt;</span> <span class="nf">SplinePlus_Get_Branches_List</span><span class="p">(</span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">)</span>
+</pre></div>
+
+
+<h4 id="nodes-list">Nodes list</h4>
+<div class="codehilite"><pre><span></span> <span class="c1">//All nodes List (shared nodes included)</span>
+ <span class="kd">public</span> <span class="kd">static</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">Node</span><span class="o">&gt;</span>  <span class="nf">SplinePlus_Get_Nodes</span><span class="p">(</span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">)</span>
+</pre></div>
+
+
+<h4 id="shared-nodes-list">Shared Nodes List</h4>
+<div class="codehilite"><pre><span></span> <span class="c1">//All shared nodes list</span>
+ <span class="kd">public</span> <span class="kd">static</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">Node</span><span class="o">&gt;</span>  <span class="nf">SplinePlus_Get_All_Shared_Nodes</span><span class="p">(</span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">)</span>
+</pre></div>
+
+
+<h4 id="smoothness">Smoothness</h4>
+<div class="codehilite"><pre><span></span> <span class="c1">//Set Smoothness</span>
+ <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">SplinePlus_Set_Smoothness</span><span class="p">(</span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">,</span> <span class="kt">int</span> <span class="n">smoothness</span><span class="p">)</span>
+
+ <span class="c1">//Get Smoothness</span>
+ <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">SplinePlus_Get_Smoothness</span><span class="p">(</span><span class="n">SPData</span> <span class="n">sPData</span> <span class="p">)</span>
+</pre></div>
+
+
+<h4 id="reference-axis">Reference axis</h4>
+<div class="codehilite"><pre><span></span> <span class="c1">//Set Reference Axis</span>
+ <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">SplinePlus_Set_Reference_Axis</span><span class="p">(</span><span class="k">this</span> <span class="n">SPData</span> <span class="n">sPData</span><span class="p">,</span> <span class="n">RefAxis</span> <span class="n">axis</span><span class="p">)</span>
+
+ <span class="c1">//Get Reference Axis</span>
+ <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">SplinePlus_Get_Reference_Axis</span><span class="p">(</span><span class="n">SPData</span> <span class="n">sPData</span><span class="p">)</span>
+</pre></div>
                 
                   
                 
@@ -689,7 +779,7 @@ style="margin-center: 10px; width: 450px" />
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../TrainFollower/Inspector/" title="Train Follower" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../TubeMesh/Inspector/" title="Tube Mesh" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -698,19 +788,19 @@ style="margin-center: 10px; width: 450px" />
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Train Follower
+                Tube Mesh
               </span>
             </div>
           </a>
         
         
-          <a href="../../MeshDeform/Inspector/" title="Mesh Deform" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../Node/" title="Node" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Mesh Deform
+                Node
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
